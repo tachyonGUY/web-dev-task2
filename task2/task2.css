@@ -1,0 +1,198 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+    background-color: #d1c6c698;
+}
+.header {
+    background-image: url('https://images.static-collegedunia.com/public/college_data/images/campusimage/1406793695Netaji_Subhas_Institute_of_Technology_(NSIT)_-_Admin_Block.jpg'); /* Replace 'logo.jpg' with the path to your logo image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: cover;
+    padding: 50px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif; /* Replace 'Arial' with the name of your unique font */
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 8px rgba(230, 11, 11, 0.993); /* This adds a shadow to the text for better readability */
+    font-size: 75px;
+}
+
+.content {
+    margin: 15px;
+    /* background-color: #d1c6c698; */
+}
+.heading{
+    margin-top:50px;
+    margin-bottom:4px;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+
+.alumni {
+    display: flex;
+    overflow-x: auto;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    border: 3px solid #484545;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    background-color: #808080;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+/* about div */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-container .heading {
+    flex-basis: 30%;
+    margin: auto;
+}
+
+.about-container p {
+    position: relative;
+    flex-basis: 70%;
+    background-color: rgba(240, 240, 240, 0.7); /* Semi-transparent background to see the blur effect */
+    padding: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-container p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://leavesinternational.com/wp-content/uploads/2023/01/Netaji_Subhas_University_of_Technology.svg_.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    backdrop-filter: blur(8px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(8px); /* For Safari compatibility */
+    border-radius: 10px; /* Match the border-radius of the paragraph */
+    z-index: -1;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Style links on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style visited links */
+a:visited {
+    text-decoration: none;
+}
+
+/* Style active links */
+a:active {
+    text-decoration: none;
+}
+
+
+
+/* updates section */
+.updates-container {
+    padding: 20px;
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.updates-container[open] {
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid rgba(74, 78, 83, 0.667);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #ff8d30e3;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.updates-content {
+    display: none;
+}
+
+.updates-container[open] .updates-content {
+    display: block;
+}
+
+
+/* university album */
+#albumContainer {
+    border: 10px solid #484545;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    /* margin-top: 100px; */
+    /* padding:1px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.albumImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This property scales the image while maintaining aspect ratio */
+    transition: transform 0.5s ease;
+}
